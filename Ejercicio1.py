@@ -6,7 +6,7 @@ import turtle
 x=0
 y=10
 n=input ("Digite el número de lados del polígono ")
-k=0
+k=1
 if (n%2==0):
     while (k<=n):
         print x,y
