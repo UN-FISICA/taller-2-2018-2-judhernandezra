@@ -3,21 +3,62 @@
 
 import math
 import turtle
-sides = int(input("Número de lados del polígono "))
-angle = 360 / sides
-angler= 2*math.pi/sides
+angulo = 90
+angulor= 2*math.pi/4
 r=50
-d=2*r*math.sin(angler/2)
+d=2*r*math.sin(angulor/2)
 
 turtle.penup()
 turtle.fd(100)
 turtle.rt(90)
 turtle.fd(100)
-turtle.rt(angle)
+turtle.rt(angulo/2)
 turtle.fd(r)
-turtle.lt(angle+90)
+turtle.lt(135)
 turtle.pendown()
 
-for count in range(sides):
+for count in range(4):
   turtle.fd(d)
-  turtle.lt(angle)
+  turtle.lt(angulo)
+
+turtle.penup()
+turtle.lt(45)
+turtle.fd(r)
+turtle.lt(45)
+turtle.fd(200)
+turtle.lt(135)
+turtle.fd(r)
+turtle.lt(135)
+turtle.pendown()
+
+for count in range(4):
+  turtle.fd(d)
+  turtle.lt(angulo)
+
+turtle.penup()
+turtle.lt(45)
+turtle.fd(r)
+turtle.lt(135)
+turtle.fd(200)
+turtle.lt(45)
+turtle.fd(r)
+turtle.lt(135)
+turtle.pendown()
+
+for count in range(4):
+  turtle.fd(d)
+  turtle.lt(angulo)
+
+turtle.penup()
+turtle.lt(45)
+turtle.fd(r)
+turtle.rt(135)
+turtle.fd(200)
+turtle.lt(45)
+turtle.fd(r)
+turtle.lt(135)
+turtle.pendown()
+
+for count in range(4):
+  turtle.fd(d)
+  turtle.lt(angulo)
